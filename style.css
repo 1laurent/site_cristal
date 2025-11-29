@@ -1,0 +1,280 @@
+/* BANDEAU BIENVENUE */
+.welcome-banner {
+    display: flex;
+    justify-content: space-between; /* Logo gauche – Texte – Logo droite */
+    align-items: center;
+    padding: 20px 40px;
+    background: white;
+    border-bottom: 2px solid #0B7A4B;
+}
+
+.logo-left{
+    width: 120px;
+    height: auto;
+    text-align: left;
+}
+.logo-right {
+    width: 120px;
+    text-align: right;       
+    height: auto;
+
+}
+.credo1{
+    text-align: center;
+    color: black;
+    padding-bottom: 100px;
+}
+.credo2{
+    text-align: justify;
+    line-height: 1.6;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+.valeurs{
+    text-align: center;
+    color: black;
+}
+.welcome-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0B7A4B;
+    text-align: center;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #111;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: green;
+    color: white;
+    position: relative;
+}
+
+.hamburger {
+    font-size: 32px;
+    cursor: pointer;
+}
+
+
+nav {
+    display: none; /* Masqué au départ */
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    background: white;
+    color: #003366;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    flex-direction: column;
+    text-align: left;
+    z-index: 1000;
+}
+
+nav a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #003366;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background: #e6f0ff;
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    background: #003366;
+    text-align: left;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+nav a {
+    color: white;
+    padding: 8px 0;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    background: url('../img/hero.jpg');
+    background-size: cover;
+    padding: 120px 30px;
+    color: white;
+}
+
+.btn-orange {
+    background: #FF7F11;
+    padding: 10px 22px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.btn-green {
+    background: #0B7A4B;
+    padding: 10px 22px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+.feature-card1 {
+    background: #ccc;
+    padding: 20px;
+    width: 28%;
+    border-radius: 8px;
+    text-align: center;
+}
+.feature-card2 {
+    background: green;
+    padding: 20px;
+    width: 28%;
+    border-radius: 8px;
+    text-align: center;
+}
+.feature-card3 {
+    background: #FF7F11;
+    padding: 20px;
+    width: 28%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* FORMULAIRES */
+.form {
+    width: 35%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.cristal-values {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.value-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.value-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.value-box p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+.social-links i {
+    font-size: 28px;
+    margin: 0 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-links i:hover {
+    transform: scale(1.2);
+    
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Bouton Inscription */
+.btn-inscription {
+    background-color: #ff9800;
+    color: white;
+    padding: 7px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-inscription:hover {
+    background-color: #e68900;
+}
+
+/* Bouton Connexion */
+.btn-connexion {
+    background-color: transparent;
+    color: white;
+    padding: 7px 16px;
+    border-radius: 6px;
+    border: 1px solid white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-connexion:hover {
+    background-color: white;
+    color: #0B7A4B;
+}
+
